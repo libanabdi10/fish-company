@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar nav a:hover {
+  transform: 3s;
+  color: orange;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('p2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #00b4d8;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0077b6;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #e0f7fa;
+  flex-wrap: wrap;
+  transform: 3s;
+}
+
+.feature {
+  flex: 1 1 250px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    margin-top: 10px;
+  }
+
+  .navbar nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .feature {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
